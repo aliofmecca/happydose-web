@@ -336,7 +336,7 @@ export const strings = {
   // Terms of Service
   terms: {
     title: "Terms of Service",
-    lastUpdated: "April 8, 2026",
+    lastUpdated: "September 16, 2026",
     sections: [
       {
         heading: "1. Acceptance of Terms",
@@ -348,7 +348,7 @@ export const strings = {
       },
       {
         heading: "3. Not Medical Advice",
-        body: "HappyDose is not a medical device, healthcare provider, or substitute for professional medical advice. Supplement information, interaction warnings, and recommendations are provided for informational purposes only and are based on publicly available data and curated rules. You should always consult a qualified healthcare professional before starting, stopping, or changing any supplement regimen — especially if you have a medical condition, are pregnant, or are taking prescription medication.",
+        body: "HappyDose is a tracking and information tool — it is not a medical device, healthcare provider, or a substitute for professional medical advice, diagnosis, or treatment. All supplement information, scores, timing suggestions, interaction warnings, and AI-generated recommendations are provided for general informational purposes only, are based on publicly available data, curated rules, and automated analysis, and may be incomplete or inaccurate. A qualified healthcare practitioner has the final say. You should always consult a qualified healthcare professional — and do your own research — before starting, stopping, or changing any supplement regimen, especially if you have a medical condition, are pregnant or nursing, or are taking prescription medication.",
       },
       {
         heading: "4. Account Registration",
@@ -378,7 +378,7 @@ export const strings = {
       },
       {
         heading: "8. Health & Safety Disclaimer",
-        body: "Supplement interactions, dosage information, and timing recommendations in HappyDose are sourced from manufacturer labels, public databases, and curated rules. They are not exhaustive and may not apply to your specific situation. HappyDose is not liable for any adverse effects, missed doses, or health outcomes related to your use of the app. Always read supplement labels, follow your doctor's instructions, and seek immediate medical attention if you experience an adverse reaction.",
+        body: "Supplement interactions, dosage information, scores, and timing recommendations in HappyDose are sourced from manufacturer labels, public databases, curated rules, and automated (AI) analysis. They are not exhaustive and may not apply to your specific situation. Your use of, and any reliance on, the app and its information is entirely at your own risk and discretion, and you are solely responsible for your own health decisions. To the maximum extent permitted by law, HappyDose accepts no liability and no responsibility for any adverse effects, injury, loss, missed doses, or health outcomes arising from your use of — or reliance on — the app. Always read supplement labels, follow your doctor's instructions, and seek immediate medical attention if you experience an adverse reaction.",
       },
       {
         heading: "9. Intellectual Property",
