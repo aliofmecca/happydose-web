@@ -47,12 +47,12 @@ export const strings = {
       {
         pain: "Half the things in your stack are quietly fighting each other, and you're the one losing.",
         solution:
-          "Zinc and calcium cancel each other out. Iron and coffee? Expensive placebo. HappyDose catches the fight the second you add a new bottle — and reshuffles your timings so your money actually reaches your bloodstream.",
+          "Zinc and calcium cancel each other out. Iron and coffee? Expensive placebo. HappyDose catches the fight the second you add a new bottle — and shows you a better set of timings to accept or ignore, so your money actually reaches your bloodstream.",
       },
       {
         pain: "You've been on it for months. Is it working? You honestly couldn't tell me.",
         solution:
-          "How long until it kicks in? What should you feel? When do you cycle off? You can't answer any of it — because you've been flying blind. HappyDose builds you the timeline that finally turns \"is it working?\" into a fact.",
+          "How long until it kicks in? What should you feel? You can't answer any of it — because you've been flying blind. HappyDose builds you the timeline that finally turns \"is it working?\" into a fact.",
       },
       {
         pain: "You're quietly losing the one thing supplements are supposed to give you: momentum.",
@@ -82,16 +82,16 @@ export const strings = {
 
   // How it works
   howItWorks: {
-    eyebrow: "Bring us your bottles. We'll build you the protocol that turns them into results.",
+    eyebrow: "Bring us your bottles. We'll build you the schedule that turns them into results.",
     title: "Three things we do that nobody else is doing properly.",
     subtitle:
-      "We didn't build another reminder app. We built the thing that should have existed the whole time — a real method, designed around your body, your blood tests, and your doctor. Not a replacement for any of them. The missing layer between all three. Here's exactly what that looks like.",
+      "We didn't build another reminder app. We built the thing that should have existed the whole time — a real method, designed around your body, your routine, and your doctor. Not a replacement for either of them. The missing layer in between. Here's exactly what that looks like.",
     steps: [
       {
         number: "01",
-        title: "We turn your shelf into a protocol that actually holds up.",
+        title: "We turn your shelf into a schedule that actually holds up.",
         description:
-          "Scan a bottle — takes five seconds. Then you choose where the timing comes from: the manufacturer's label, your doctor's advice, your own research, or our AI. We handle the rest — empty stomach, away from your morning coffee, away from the calcium in your breakfast. In under a minute, your shelf stops being decoration and starts being the precise protocol a functional medicine doctor would charge you $400 to build.",
+          "Scan a bottle — takes five seconds. Then you choose where the timing comes from: the manufacturer's label, your doctor's advice, your own research, or our AI. We handle the rest — empty stomach, away from your morning coffee, away from the calcium in your breakfast. In under a minute, your shelf stops being decoration and starts being a schedule built around your actual day.",
       },
       {
         number: "02",
@@ -103,7 +103,7 @@ export const strings = {
         number: "03",
         title: "We complete your doctor's plan. We don't replace it.",
         description:
-          "Your physician has the final word. Your blood tests are the source of truth. HappyDose logs your doctor's recommendations, turns your daily intake into a clean timeline, and actively encourages real blood work before and after every cycle. The AI flags what changed and suggests what to ask next, but defers to your physician on whether to keep a supplement, cycle it off, or stop it for a season.",
+          "Your physician has the final word. HappyDose logs your doctor's recommendations and turns your daily intake into a clean timeline. The AI flags what changed and suggests what to ask next — but your physician decides what you take.",
       },
     ],
   },
@@ -123,7 +123,7 @@ export const strings = {
       "is the part everyone skips.",
     ],
     body:
-      "You wouldn't take a course and never finish it. You wouldn't sign up for the gym and never go. But every year, billions of dollars in supplements rot in medicine cabinets — bought with intention, abandoned without a system. HappyDose is for people who are done buying hope and ready to buy a method. One that respects the doctor who prescribed it, the blood tests that prove it, and the body that has to live with it.",
+      "You wouldn't take a course and never finish it. You wouldn't sign up for the gym and never go. But every year, billions of dollars in supplements rot in medicine cabinets — bought with intention, abandoned without a system. HappyDose is for people who are done buying hope and ready to buy a method. One that respects the doctor who prescribed it, and the body that has to live with it.",
   },
 
   // Waitlist
