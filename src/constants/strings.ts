@@ -26,7 +26,7 @@ export const strings = {
     titleBefore: "Finally feel what your supplements",
     titleHighlight: "were supposed to do.",
     subtitle:
-      "Your \"wellness routine\" is a shelf full of half-empty bottles and the quiet, confused feeling of trying. HappyDose is the AI that finally turns the supplements you already paid for into results you can actually feel.",
+      "Your \"wellness routine\" is a shelf full of half-empty bottles and the quiet, confused feeling of trying. HappyDose is the AI that finally gets the supplements you already paid for into your bloodstream — instead of straight down the drain.",
     goalsLabel: "Built around what you're actually chasing",
     goals: [
       { emoji: "⚡", label: "Energy" },
@@ -52,7 +52,7 @@ export const strings = {
       {
         pain: "You've been on it for months. Is it working? You honestly couldn't tell me.",
         solution:
-          "How long until it kicks in? What should you feel? You can't answer any of it — because you've been flying blind. HappyDose builds you the timeline that finally turns \"is it working?\" into a fact.",
+          "Are you taking it at the right time? Is something else cancelling it out? You can't answer any of it — because you've been flying blind. HappyDose builds you the timeline that finally turns \"am I even doing this right?\" into something you can see.",
       },
       {
         pain: "You're quietly losing the one thing supplements are supposed to give you: momentum.",
@@ -264,7 +264,7 @@ export const strings = {
       },
       {
         heading: "3. Health Data & Sensitivity",
-        body: "HappyDose collects information that could be considered health data — including supplements you take, when you take them, and any optional biometrics or blood test results you upload. We treat this information with elevated care: it is encrypted in transit and at rest, never sold, and never shared with advertisers. HappyDose is not a medical device and does not provide medical advice.",
+        body: "HappyDose collects information that could be considered health data — including supplements you take, when you take them, and any optional biometrics you provide. We treat this information with elevated care: it is encrypted in transit and at rest, never sold, and never shared with advertisers. HappyDose is not a medical device and does not provide medical advice.",
       },
       {
         heading: "4. Data Storage",
@@ -360,7 +360,7 @@ export const strings = {
       },
       {
         heading: "6. User Content",
-        body: "You retain ownership of all content you create in HappyDose, including your supplement stack, intake logs, doctor profiles, notes, and any uploaded blood test results. By submitting feedback through the app, you grant us permission to use it for product improvement purposes. You may delete your content at any time.",
+        body: "You retain ownership of all content you create in HappyDose, including your supplement stack, intake logs and notes. By submitting feedback through the app, you grant us permission to use it for product improvement purposes. You may delete your content at any time.",
       },
       {
         heading: "7. User Conduct",
@@ -439,7 +439,7 @@ export const strings = {
       "Your full supplement stack (supplements, dosages, schedules)",
       "All intake logs and consistency history",
       "Doctor profiles and recommendation overrides",
-      "Any biometric data or blood test uploads",
+      "Any biometric data you provided",
       "Streaks, scores, and analytics history",
       "Notification preferences and settings",
       "All feedback and submitted content",
