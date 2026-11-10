@@ -1,6 +1,25 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+
+// The <html class="dark"> attribute is the single source of truth — ThemeScript
+// sets it before paint, and this component mirrors it rather than owning it.
+function subscribe(onStoreChange: () => void) {
+  const observer = new MutationObserver(onStoreChange);
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["class"],
+  });
+  return () => observer.disconnect();
+}
+
+const getSnapshot = () => document.documentElement.classList.contains("dark");
+
+// No DOM on the server, and the class is written by an inline script the SSR
+// pass cannot see. Returning null for both the server render AND the hydration
+// render keeps them identical (no mismatch); React swaps in the real value from
+// getSnapshot once hydration finishes.
+const getServerSnapshot = () => null;
 
 const SunIcon = () => (
   <svg
@@ -43,25 +62,19 @@ const MoonIcon = () => (
 );
 
 export function ThemeToggle() {
-  const [isDark, setIsDark] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"));
-
-    const observer = new MutationObserver(() => {
-      setIsDark(document.documentElement.classList.contains("dark"));
-    });
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-    return () => observer.disconnect();
-  }, []);
+  const isDark = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   function toggle() {
-    const next = !isDark;
+    // Read the DOM rather than the rendered value, so a click is correct even
+    // if something else changed the theme since the last render. The observer
+    // above pushes the new value back into React.
+    const next = !document.documentElement.classList.contains("dark");
     document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("theme", next ? "dark" : "light");
+    try {
+      localStorage.setItem("theme", next ? "dark" : "light");
+    } catch {
+      // private mode / blocked storage — the toggle still works for this visit
+    }
   }
 
   return (

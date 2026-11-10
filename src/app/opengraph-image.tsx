@@ -38,7 +38,6 @@ export default async function Image() {
             marginBottom: "48px",
           }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={logoBase64} alt="" width={80} height={80} />
           <span
             style={{

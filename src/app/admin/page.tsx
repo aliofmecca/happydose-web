@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 
 interface WaitlistEntry {
   id: string;
@@ -500,12 +501,12 @@ export default function AdminPage() {
             <h1 className="text-2xl font-bold">HappyDose Admin</h1>
             <p className="text-muted text-sm mt-1">Manage your waitlist and tester feedback</p>
           </div>
-          <a
+          <Link
             href="/"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
             ← Back to site
-          </a>
+          </Link>
         </div>
 
         {/* Tabs */}
